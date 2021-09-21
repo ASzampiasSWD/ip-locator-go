@@ -103,10 +103,10 @@ func requestGeoPlugin(ip string) *http.Response {
 func getVPNStatus(ip string) *http.Response {
 	strLink := "http://v2.api.iphub.info/ip/" + ip
 	client := &http.Client{}
-	req, err := http.NewRequest("GET", strLink, nil)
+	req, _ := http.NewRequest("GET", strLink, nil)
 	strKey := readIpHubKeyFromFile()
 	req.Header.Set("X-Key", strKey)
-	res, _ := client.Do(req)
+	res, err := client.Do(req)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -129,7 +129,7 @@ func readIpHubKeyFromFile() string {
 		fmt.Println("Error: ", err)
 		os.Exit(1)
 	}
-	return string(bs)
+	return strings.TrimSpace(string(bs))
 }
 
 func saveToFile(filename string, d string) error {
