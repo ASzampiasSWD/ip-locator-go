@@ -3,11 +3,9 @@ This go code generates a Google Earth file from a text file of IP Addresses. The
 IP information includes latitude, longitude, city, region, country, ISP, and if the IP belongs to a VPN provider. 
 
 ## Steps
-Install the python libraries using pip3:
+Install the Go Library by twpayne. Navigate to the ip-locator-go folder and issue this command:
 <pre>
-pip3 install requests
-pip3 install simplekml
-pip3 install csv
+go get github.com/twpayne/go-kml
 </pre>
 
 Run the script
@@ -16,7 +14,7 @@ Run the script
 go run main.go
 - OR - 
 go build
-./locateIPs
+./ip-locator-go
 </pre>
 
 ## Optional VPN and ISP Detection
