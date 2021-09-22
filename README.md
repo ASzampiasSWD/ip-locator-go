@@ -23,9 +23,9 @@ Steps:
 <pre>
 1. Register for an account on the website <a href="https://iphub.info/">https://iphub.info/</a>.
 2. Generate a <b>free</b> API key. This will let you make 1000 requests a day.
-3. Make a file called iphub-info.txt within the locateIPs.py directory.
+3. Make a file called iphub-info.txt within the ip-locator-go directory.
 4. Paste the API key in the file.
 </pre>
 
 ## How-to Video
-[![How To Video](https://img.youtube.com/vi/IEl-kBQvutU/0.jpg)](https://www.youtube.com/watch?v=IEl-kBQvutU)
+[![How To Video](https://img.youtube.com/vi/mDdzq0UE_d8/0.jpg)](https://www.youtube.com/watch?v=mDdzq0UE_d8)
